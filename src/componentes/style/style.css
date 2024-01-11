@@ -1,0 +1,172 @@
+.button {
+    background: linear-gradient(#85C1E9, white);
+    transition: 1s;
+    border: transparent;
+    border-radius: 15px;
+    font-family: Trebuchet MS;
+    margin: 5px;
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+.button:hover {
+    background: linear-gradient(white, #85C1E9);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.sportage {
+    animation-duration: 3s;
+    animation-name: mover;
+}
+
+@keyframes mover {
+
+    from {
+        margin-left: 100%;
+        width: 0;
+    }
+
+    to {
+        width: 120%;
+    }
+
+}
+
+.sportage:hover {
+    opacity: .8;
+    box-shadow: 0px 0px 15px 5px rgb(102, 202, 156);
+    transition: 2s;
+}
+
+.bodega {
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover {
+    box-shadow: 0px 0px 5px 1px #566573;
+}
+
+.info:hover {
+    box-shadow: inset 0px 0px 10px 4px yellow;
+    transition: 1s;
+}
+
+.elementos {
+    background-color: rgb(118, 178, 255);
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px #000000;
+}
+
+.movimiento {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+        margin-left: 100%;
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.movimientoRev {
+    animation-duration: 2s;
+    animation-name: slideinRev;
+}
+
+@keyframes slideinRev {
+    from {
+        opacity: 0;
+        margin-right: 100%;
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.marquee {
+    display: inline-block;
+    transform: translateX(0);
+    animation: marquesina 10s infinite normal linear 1s;
+}
+
+@keyframes marquesina {
+
+    from {
+        transform: translatex(-150%);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translatex(150%);
+        opacity: 0;
+    }
+}
+
+.navfoo:hover {
+    transition: 5s;
+    background-position: bottom;
+}
+
+.alargar:hover {
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.letras {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #18bdec;
+    animation: typing 4s steps(28) 1s normal both, blink 1s steps(1) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (max-width:600px){
+    .ocultar{
+        display:none
+    }
+}
