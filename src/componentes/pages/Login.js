@@ -3,6 +3,7 @@ import axios from 'axios';
 import gif from '../imagen/login.jpeg'
 import fondo from '../imagen/fondo.jpg'
 import { BsFillPersonFill, BsKey, BsFolder } from "react-icons/bs"
+import { useEffect } from "react";
 
 //import '../style/style.css'
 
@@ -18,16 +19,26 @@ const Login = () => {
   //   },
   // }
 
+  useEffect(() =>{
+    alert("Administrador: \nUser: esteban@gmail.com \nPassword: 123 \n\nUsuarios: \nUser and password: any word")
+  },[])
+
+  
+
+
+
   const Sesion = () => {
 
     const correo = document.getElementById("email").value
     const password = document.getElementById("password").value
 
-    if(correo === "esteban@gmail.com" & password === "123"){
+    if (correo === "esteban@gmail.com" & password === "123") {
       sessionStorage.setItem("USER", "administrador")
       window.location.href = "/Principal"
-    }else{
+      alert("welcome admin ", correo)
+    } else {
       window.location.href = "/PrincipalUser"
+      alert("welcome User ",correo)
     }
 
     // axios.post(url, {
